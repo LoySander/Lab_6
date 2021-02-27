@@ -16,7 +16,8 @@ public class Field extends JPanel {
      // Динамический список скачущих мячей
     private ArrayList<BouncingBall> balls= new ArrayList<BouncingBall>(10);
     // Класс таймер отвечает за регулярную генерацию событий
-    // ActionEvent// При создании его экземпляра используется анонимный класс, // реализующий интерфейс ActionListener
+    // ActionEvent  При создании его экземпляра используется анонимный класс,
+    // реализующий интерфейс ActionListener
     private Timer repaintTimer= new Timer(10, new ActionListener() {
         public void actionPerformed(ActionEvent ev) {
             // Задача обработчика события ActionEvent-перерисовка окна
