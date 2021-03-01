@@ -47,6 +47,7 @@ public class Field extends JPanel {
         // BouncingBallвыполняет сам в конструкторе
         balls.add(new BouncingBall(this));
     }
+
     // Метод синхронизированный, т.е. только один поток может
     // одновременно быть внутри
     public synchronized void pause() {
@@ -69,6 +70,7 @@ public class Field extends JPanel {
             wait();
         }
     }
+
 
 }
 
