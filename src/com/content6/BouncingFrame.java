@@ -10,8 +10,8 @@ import javax.swing.JFrame;
 public class BouncingFrame implements Runnable {
     // Вертикальная и горизонтальная компонента скорости
     private int speed = 1;
-    private int speedX = 3;
-    private int speedY = 3;
+    private int speedX = 1;
+    private int speedY = 1;
     private Main frame;
     private int WIDTH;
     private int HEIGHT ;
@@ -101,7 +101,7 @@ public class BouncingFrame implements Runnable {
                 // Засыпаем на Xмиллисекунд, где Xопределяется
                 // исходя из скорости
                 // Скорость = 1 (медленно), засыпаем на 15 мс.// Скорость = 15 (быстро), засыпаем на 1 мс.
-                Thread.sleep(30-speed);
+                Thread.sleep(50-speed);
 
             }
 
